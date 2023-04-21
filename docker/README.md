@@ -41,8 +41,6 @@ Sign in on https://container-registry.oracle.com and then go to Database -> ente
 
 #### Docker commands
 ```
-docker login container-registry.oracle.com
-
 
 docker-compose -f docker-compose.yml build
 docker-compose -f docker-compose.yml up -d --no-build
@@ -55,6 +53,10 @@ docker-compose -f docker-compose.yml stop git-sync
 docker-compose -f docker-compose.yml build airflow-database
 docker-compose -f docker-compose.yml up -d --no-build airflow-database
 docker-compose -f docker-compose.yml stop airflow-database
+
+docker-compose -f docker-compose.yml build airflow
+docker-compose -f docker-compose.yml up -d --no-build airflow
+docker-compose -f docker-compose.yml stop airflow
 
 docker-compose -f docker-compose.yml exec -it database-server /bin/sh
 docker-compose -f docker-compose.yml --user="root" -it database-server /bin/bash
