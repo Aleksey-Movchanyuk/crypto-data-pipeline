@@ -43,7 +43,7 @@ with DAG(
     dag_id=DAG_NAME,
     default_args=DAG_ARGS,
     description='Fetch daily BTC and ETH price data from Binance',
-    start_date=datetime(2023, 4, 20, tzinfo=pytz.UTC),
+    start_date=datetime(2020, 1, 1, tzinfo=pytz.UTC),
     schedule_interval=DAG_SCHEDULE_INTERVAL,
     catchup=True,
     #template_searchpath=TMPL_SEARCH_PATH,
