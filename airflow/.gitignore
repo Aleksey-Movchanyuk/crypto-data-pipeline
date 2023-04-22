@@ -1,6 +1,9 @@
 venv
 logs
 
+connections
+variables 
+
 airflow.cfg
 airflow.db
 webserver_config.py
