@@ -1,9 +1,5 @@
 version: '3.7'
 
-secrets:
-  practiq_trader_bigquery:
-    file: ../credentials/practiq-trader-bigquery.json
-
 services:
 
   git-sync:
