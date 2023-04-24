@@ -107,7 +107,7 @@ with DAG(
         service = build('sheets', 'v4', credentials=creds)
 
         # Specify the ID of your Google Sheet and the range
-        spreadsheet_id = '1wCIPLvR3lqlNGXcS9lf3ukvVXj0Vuw2p1w6bAVfCIHw'
+        spreadsheet_id = Variable.get('binance-klines-1d-data-spreadsheet_id')
         range_name = 'binance!A2'
 
         # Parse the kline_json data from the response
