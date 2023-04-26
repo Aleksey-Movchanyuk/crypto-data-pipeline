@@ -7,6 +7,10 @@ This is a pet project that demonstrates how to extract and visualize Binance dat
 
 ![High-Level Diagram](docs/high-level-diagram.png "High-Level Diagram")
 
+[Link to the workbook](https://public.tableau.com/app/profile/aleksey3465/viz/CryptoData_16821700094820/PriceAnalysis).
+
+![Interaction with the workbook](docs/workbook-interaction.gif "Interaction with the workbook")
+
 ## Requirements
 
 To run this project, you'll need the following tools:
